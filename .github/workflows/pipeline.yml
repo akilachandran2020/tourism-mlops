@@ -27,8 +27,5 @@ jobs:
       - name: Verify project structure
         run: |
           test -f tourism_project/data/tourism.csv
-          test -f tourism_project/model_building/best_model.joblib
+          test -f tourism_project/model_building/XGBoost_best_model.joblib
           echo "Project structure validated: dataset + trained model present"
-          test -f tourism_project/data/tourism.csv
-          test -f tourism_project/model_building/best_model.joblib
-          echo "Project structure validated: dataset + trained model present ✔"
