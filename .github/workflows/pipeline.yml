@@ -1,0 +1,12 @@
+name: Tourism MLOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  run-ml
