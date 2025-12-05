@@ -1,0 +1,11 @@
+{
+  "model_path": "tourism_project/model_building/RandomForest/RandomForest_best_model.joblib",
+  "params": {
+    "model__max_depth": 15,
+    "model__min_samples_split": 2,
+    "model__n_estimators": 128
+  },
+  "metrics": {
+    "test_accuracy": 0.9116222760290557
+  }
+}

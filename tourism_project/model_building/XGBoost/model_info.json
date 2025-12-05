@@ -1,0 +1,11 @@
+{
+  "model_path": "tourism_project/model_building/XGBoost/XGBoost_best_model.joblib",
+  "params": {
+    "model__learning_rate": 0.16743239807751675,
+    "model__max_depth": 9,
+    "model__n_estimators": 249
+  },
+  "metrics": {
+    "test_accuracy": 0.9394673123486683
+  }
+}
