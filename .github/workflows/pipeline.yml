@@ -20,7 +20,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python scripts/upload_dataset.py
+          python tourism_project/scripts/upload_dataset.py
 
 
   data-prep:
@@ -37,7 +37,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python src/data_preparation.py
+          python tourism_project/scripts/data_preparation.py
 
 
   model-training:
@@ -60,7 +60,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python src/train_model.py
+          python tourism_project/scripts/train_model.py
 
 
   deploy-hosting:
@@ -77,4 +77,4 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python scripts/deploy_space.py
+          python tourism_project/scripts/deploy_space.py
