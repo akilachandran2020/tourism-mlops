@@ -8,7 +8,7 @@ TRAIN_PATH = "tourism_project/data/train.csv"
 
 train = pd.read_csv(TRAIN_PATH)
 
-TARGET_COLUMN = "target"   # change if needed
+TARGET_COLUMN = "ProdTaken"
 
 X = train.drop(TARGET_COLUMN, axis=1)
 y = train[TARGET_COLUMN]
