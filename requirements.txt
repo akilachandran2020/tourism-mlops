@@ -1,3 +1,7 @@
 pandas
-scikit-learn==1.6.1
-joblib
+numpy
+scikit-learn
+xgboost
+mlflow
+huggingface_hub
+streamlit
