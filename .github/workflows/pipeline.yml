@@ -45,11 +45,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
           pip install mlflow
+
+      - name: Debug — List Files Before Training
+        run: ls -R .
 
       - name: Start MLflow Server
         run: |
