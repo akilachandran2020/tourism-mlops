@@ -51,9 +51,6 @@ jobs:
           pip install -r requirements.txt
           pip install mlflow
 
-      - name: Debug — List Files Before Training
-        run: ls -R .
-
       - name: Start MLflow Server
         run: |
           nohup mlflow ui --host 0.0.0.0 --port 5000 &
