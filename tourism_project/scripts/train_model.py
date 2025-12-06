@@ -24,7 +24,7 @@ model = XGBRegressor()
 model.fit(X, y)
 
 # Save trained model
-MODEL_DIR = "tourism_project/models"
+MODEL_DIR = "tourism_project/model_building"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
 MODEL_PATH = f"{MODEL_DIR}/xgboost_model.joblib"
